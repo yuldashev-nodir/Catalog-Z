@@ -145,23 +145,7 @@
     color: white;
 }
 
-.about, .links{
-    width: 30%;
-    min-width: 250px;
-}
-.about h3, .links h3{
-    color: #008b8b;
-    margin-bottom: 20px;
-    font-size: 22px;
-}
-.about p{
-    color: #555;
-    line-height: 1.6;
-}
-.about a{
-    color: #008b8b;
-    text-decoration: none;
-}
+
 
     .icons{
         display: flex;
