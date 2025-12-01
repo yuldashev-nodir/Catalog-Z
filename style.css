@@ -15,23 +15,35 @@
     align-items: center;
     background: #fff;
     border-bottom: 1px solid #ddd;
+    
+}
+.navbar a:hover,
+.navbar a.active {
+    color: #009688;
+    border-bottom: 2.5px solid #009688;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #009688;
+    font-size: 1.6rem;
+    color: #3399CC;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .navlink {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 45px;
+}
+.pht{
+    border-bottom:  4px solid #33CCFF;
+    width: 4px;
 }
 
 .navlink a {
     text-decoration: none;
-    color: #333;
+    color: #666666;
     font-size: 18px;
 }
 
@@ -48,8 +60,9 @@
 .search-box {
     display: flex;
     width: 35%;
-    background: white;
+    background: #009999;
     overflow: hidden;
+    
 }
 
 .search-box input {
@@ -57,14 +70,21 @@
     padding: 15px;
     border: none;
     font-size: 18px;
+    color: #009999;
 }
 
 .search-box button {
     padding: 15px 20px;
     width: 100px;
+    height: 50px;
     background: #009688;
     border: none;
     color: white;
+    cursor: pointer;
+    
+}
+.search-box button:hover {
+    background: #009999;
 }
 
 .container h2 {
@@ -88,13 +108,15 @@
 
 .card {
     width: 100%;
-
-    overflow: hidden;
+    cursor: pointer;
+    overflow: hidden;   
 }
 .ttt{
-    color: #00796B;
+    color: #009999;
     margin-left: 30px;
     font-family: sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
 }
 .card img {
     width: 100%;
@@ -107,62 +129,118 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    color: #666;
+    color: #999;
     font-size: 15px;
 }
-.foot{
-    margin: 60px 0;
+
+.footer .next{
+    color: white;
+    cursor: pointer;
+    background: #009999;
+    width: 500px;
+    border-radius: 5px;
+    font-size: medium;
+    border: none;
+    margin-right: 38px;
+}
+.pages {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    background: white;
 }
-.foot button{
-    background: #51b7b7;
-    color: white;
+
+.pages button {
+    background: #009999;
+    width: 165px;
+    height: 55px;
     border: none;
-    padding: 15px 35px;
+    padding: 10px 20px;
     border-radius: 5px;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 18px;
 }
-.foot button.next{
-    background: #006b6b;
+
+.page span {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #eee;
+    color: gray;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
 }
-.foot .pages{
-    display: flex;
-    gap: 15px;
-}
-.foot .pages a{
-    background: #efefef;
-    color: #555;
-    padding-inline-start: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-}   
-.foot .pages a.page{
-    background: #009d9d;
+
+.page .active {
+    background: #0f8b86;
     color: white;
 }
 
 
+footer {
+    background: #f0f0f0;
+    padding: 30px 20px 10px 20px;
+}
 
-    .icons{
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-    .icons a{
-        width: 45px;
-        height: 45px;
-        background: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 4px;
-        font-weight: bold;
-        color: #777;
-    }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-container div {
+    width: 30%;
+    min-width: 250px;
+}
+
+footer h2 {
+    color: #009999;
+}
+
+footer p, footer ul, footer li {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.8;
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social .icons span {
+    width: 45px;
+    height: 45px;
+    background: white;
+    color: #666;
+    gap: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
 
 
 
