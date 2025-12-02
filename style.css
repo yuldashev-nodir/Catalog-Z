@@ -24,7 +24,7 @@
 }
 
 .logo {
-    font-size: 1.6rem;
+    font-size: 1.6rem;  
     color: #3399CC;
     text-decoration: none;
     cursor: pointer;
@@ -132,23 +132,21 @@
     color: #999;
     font-size: 15px;
 }
+ .page span:hover{
+    background : #009999;
+    color: #fff;
 
-.footer .next{
-    color: white;
-    cursor: pointer;
-    background: #009999;
-    width: 500px;
-    border-radius: 5px;
-    font-size: medium;
-    border: none;
-    margin-right: 38px;
-}
+ }
 .pages {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background: white;
+}
+.pages .prev{
+    cursor: not-allowed;
+    background-color: #009999;
 }
 
 .pages button {
@@ -209,7 +207,7 @@ footer p, footer ul, footer li {
     color: #999;
     font-size: 14px;
     line-height: 1.8;
-
+    cursor:  pointer;
 }
 
 footer ul {
@@ -221,7 +219,7 @@ footer ul {
     width: 45px;
     height: 45px;
     background: white;
-    color: #666;
+    color: #999;
     gap: 10px;
     display: inline-flex;
     justify-content: center;
@@ -230,7 +228,10 @@ footer ul {
     font-weight: bold;
     cursor: pointer;
 }
-
+.icons span:hover{
+    background : #009999;
+    color: #fff;
+}
 
 .bottom {
     display: flex;
